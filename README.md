@@ -1,2 +1,19 @@
-# install-hornet-1.5
-One liner routine to setup a Hornet for IOTA 1.5 
+# Install Chrysalis Hornet 
+
+You can use this one line command to get a routine that will perform the installation of Hornet for IOTA 1.5. 
+Login to your VPS and run the command bellow. **This shell script has been tested in Ubuntu 20.04.** 
+
+
+## Install Golang and Hornet
+
+The following commands will download and run an install.sh script with all steps needed to install Hornet according to the guide by Svenger87 (https://github.com/svenger87/hornet-alphanet-tutorial). 
+
+```
+wget https://raw.githubusercontent.com/demichele/install-hornet-1.5/main/install.sh && chmod 0777 install.sh && ./install.sh
+```
+
+Once the process finishes you will be able to access your Node Dashboard at:
+
+```
+http://your-ip:8081
+```
