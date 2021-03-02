@@ -1,0 +1,22 @@
+[Unit]
+Description=Hornet Testnet
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/hornet-testnet
+ExecStart=/opt/hornet-testnet/hornet -c config_chrysalis_testnet.json
+ExecReload=/bin/kill -HUP $MAINPID
+TimeoutSec=infinity
+KillMode=process
+Restart=on-failure
+RestartSec=100
+Type=simple
+User=root
+Group=root
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=hornet-testnet
+
+
+[Install]
+WantedBy=multi-user.target
