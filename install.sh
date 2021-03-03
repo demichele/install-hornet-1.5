@@ -1,5 +1,5 @@
 #!/bin/bash
-# Run all commands needed to install GoShimmer
+# Run all commands needed to install Hornet
 apt update && apt dist-upgrade -y
 apt install build-essential git
 # Install Goland 1.16 
@@ -7,6 +7,9 @@ wget https://golang.org/dl/go1.16.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.16.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 cd /opt
+# Open dash and TCP ports
+ufw allow 8081/tcp
+ufw allow 15600/tcp
 # Clone Hornet from develop branch
 git clone -b develop --single-branch https://github.com/gohornet/hornet
 cd hornet
