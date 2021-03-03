@@ -34,9 +34,7 @@ The program will ask for a password and return both Salt and Hash. Next, edit th
       "passwordSalt": "YOUR_SALT"
     }
   },
-
 ```
-
 
 
 Once the process finishes you will be able to access your Node Dashboard and Login with your password in:
