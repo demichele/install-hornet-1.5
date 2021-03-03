@@ -48,13 +48,12 @@ Keep in mind that neighbors are handled following this structure
 
 ```
 systemctl stop hornet-testnet && cd /opt/hornet && git pull && scripts/build_hornet.sh && cp hornet /opt/hornet-testnet && systemctl start hornet-testnet
-
 ```
+
 If the version contains breaking changes:
 
 ```
 systemctl stop hornet-testnet && cd /opt/hornet-testnet && rm -rf testnetdb && rm -rf snapshots && cd /opt/hornet && git pull && scripts/build_hornet.sh && cp hornet /opt/hornet-testnet && systemctl start hornet-testnet
-
 ```
 
 
