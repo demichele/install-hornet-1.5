@@ -31,6 +31,10 @@ Once the process finishes you will be able to access your Node Dashboard and Log
 http://your-ip:8081
 ```
 
+## Add Neighbors
+
+You can add new neighbors from the Dashboard visiting https://nodesharing.wisewolf.de/ or asking guys at the chrysalis-testnet Discord channel.
+
 
 
 
