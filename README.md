@@ -34,7 +34,12 @@ http://your-ip:8081
 ## Add Neighbors
 
 You can add new neighbors from the Dashboard visiting https://nodesharing.wisewolf.de/ or asking guys at the chrysalis-testnet Discord channel.
+Keep in mind that neighbors are handled following this structure
 
+```
+/dns/testnet.hornetnode.com/tcp/15600/p2p/12D3KooWS7nyRgFjzgkethzi6SDdjmuAGooxDmnoLzyex7Lu4hKo
+/ip4/80.58.56.41/tcp/15600/p2p/12D3KooWS7nyRgFjzgkethzi6SDdjmuAGooxDmnoLzyex7Lu4hKo
+```
 
 
 
